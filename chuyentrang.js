@@ -15,11 +15,11 @@ function checkLinks() {
 
         DOMAssistant.$("body a").each(function () {        
             if (in_object(domains, DOMAssistant.$(this).href)) {             
-                if (DOMAssistant.$(this).href.toLowerCase().indexOf("tinhoc24h.info") != 7) {   
+                if (DOMAssistant.$(this).href.toLowerCase().indexOf("kenhgameoffline.com") != 7) {   
                     if (redirect == 'int') {
-                        url = "http://namkna.blogspot.com/?url="+DOMAssistant.$(this).href;
+                        url = "http://check.kenhgameoffline.com/?url="+DOMAssistant.$(this).href;
                     } else {
-                        url = "http://direct-gameoffline.blogspot.com/?url="+DOMAssistant.$(this).href;
+                        url = "http://check.kenhgameoffline.com/?url="+DOMAssistant.$(this).href;
                     }
                     DOMAssistant.$(this).setAttributes({href : url});
                 }                
@@ -30,11 +30,11 @@ function checkLinks() {
 
         DOMAssistant.$("body a").each(function () {      
             if (!in_object(exclude_domains, DOMAssistant.$(this).href) && DOMAssistant.$(this).href.substr(0,10) != "javascript") {                        
-                if (DOMAssistant.$(this).href.toLowerCase().indexOf("tinhoc24h.info") != 7) {                                
+                if (DOMAssistant.$(this).href.toLowerCase().indexOf("kenhgameoffline.com") != 7) {                                
                     if (redirect == 'int') {
-                        url = "http://direct-gameoffline.blogspot.com/?url="+DOMAssistant.$(this).href;
+                        url = "http://check.kenhgameoffline.com/?url="+DOMAssistant.$(this).href;
                     } else {
-                        url = "http://direct-gameoffline.blogspot.com/?url="+DOMAssistant.$(this).href;
+                        url = "http://check.kenhgameoffline.com/?url="+DOMAssistant.$(this).href;
                     }
                     DOMAssistant.$(this).setAttributes({href : url});                    
                 }
